@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/mainpage-images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/help-request.css" type="text/css">
+    <title>True Heart</title>
+  </head>
+  <body>
+   <header>
+      <div class="header-gradient">
+          <a href="../HTML/mainpage.html">
+              <span class="header-logo">
+                  <img src="../images/mainpage-images/logo.png" alt="">
+              </span>
+          </a>
+           <nav>
+               <ul class="navigation">
+                   <li><a href="#contacts" class="nav-links">Contacts</a></li>
+                   <li><a href="mainpage.html#aboutus" class="nav-links">About Us</a></li>
+                   <li><a href="mainpage.html#support" class="nav-links">Support</a></li>
+                   <li><a href="#" class="nav-links">Help Request</a></li>
+                   <li class="dropdown-block">
+                       <a href="#" class="nav-links">Our Pets</a>
+                       <ul class="dropdown-list">
+                           <li class="dropdown-child"><a href="#">Dogs</a></li>
+                           <li class="dropdown-child"><a href="#">Cats</a></li>
+                           <li class="dropdown-child"><a href="#">Hamsters</a></li>
+                           <li class="dropdown-child"><a href="#">Raccoons</a></li>
+                           <li class="dropdown-child"><a href="#">Turtles</a></li>
+                           <li class="dropdown-child"><a href="#">Parrots</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+   <div class="main-form">
+       <form>
+       <div class="row">
+           <div class="col-12 col-sm-6">
+               <div class="form-group">
+                <label for="petName">First name:</label>
+                <input type="text" class="form-control" id="petName" placeholder="John" required>
+              </div>
+           </div>
+           <div class="col-12 col-sm-6">
+               <div class="form-group">
+                <label for="petName">Second name:</label>
+                <input type="text" class="form-control" id="petName" placeholder="Smith" required>
+              </div>
+           </div>
+       </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+              </select >
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip" required>
+            </div>
+          </div>
+          <div class="form-group">
+  </div>
+
+      <div class="form-group">
+        <label>Email address</label>
+        <input type="email" class="form-control" placeholder="name@example.com" required>
+      </div>
+      <div class="form-group">
+        <label>Phone number</label>
+        <input type="tel" class="form-control" value="+375()" placeholder="+375(**)*******" required 
+        pattern='\s{0,}\+{1,1}375\s{0,}\({0,1}(([2]{1}([5]{1}|[9]{1}))|([3]{1}[3]{1})|([4]{1}[4]{1}))\)\s{0,}[0-9]{3,3}\s{0,}[0-9]{4,4}'>
+        <small id="passwordHelpBlock" class="form-text text-muted">
+          Input number in this format: +375(**)*******
+        </small>
+      </div>
+      <div class="form-group">
+        <label>Pet's type</label>
+        <select class="form-control" id="exampleFormControlSelect1" required>
+          <option>Dog</option>
+          <option>Cat</option>
+          <option>Hamster</option>
+          <option>Raccoon</option>
+          <option>Turtle</option>
+          <option>Parot</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="petName">Pet's name</label>
+        <input type="text" class="form-control" id="petName" placeholder="Spike" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Your wishes</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-info ">Reset</button>
+    </form>
+   </div>
+   <a id="contacts" href=""></a>
+   <footer>
+       <div class="footer-gradient">
+           <div class="footer-container">
+               <div class="footer-logo">
+                   <img src="../images/mainpage-images/logo.png" alt="">
+               </div>
+               <p class="copyright">&copy;All rights reserved 2019</p>
+              <div class="contacts">
+                 <div class="contact-info mb-5">
+                     <h5>Phone:</h5>
+                     <p>+375 (29) 284-76-16</p>
+                     <h5>Adress:</h5>
+                     <p>Ulitsa Kurchatova 8, Minsk 220064</p>
+                 </div>
+                  <div class="networks">
+                 
+                  <div class="social-networks facebook">
+                      <a href=""><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="social-networks instagram">
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <div class="social-networks youtube">
+                      <a href=""><i class="fab fa-youtube"></i></a>
+                  </div>
+                  <div class="social-networks twitter">
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                  </div>
+           </div>
+              </div>
+           </div>
+       </div>
+   </footer>
+    <script src="https://kit.fontawesome.com/e17f2cfa96.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

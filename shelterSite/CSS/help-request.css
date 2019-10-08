@@ -12,15 +12,27 @@ body{
 }
 /*HEADER-----------------------------------------------------*/
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding:20px 50px 0px 0px;
-    justify-content: center;
-    
+    background-image: url(../images/mainpage-images/zig%20zag%20wool.png);
+}
+.header-gradient{
+    align-items: center;
+    padding:20px 50px 20px 20px;
     display: flex;
     width: 100%;
-    
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(133,0,0);
+    background: -webkit-linear-gradient(left, rgba(133,0,0,0.49933476808692223) 0%, rgba(0,0,0,0) 50%, rgba(133,0,0,0.5) 100%);
+    background: -o-linear-gradient(left, rgba(133,0,0,0.49933476808692223) 0%, rgba(0,0,0,0) 50%, rgba(133,0,0,0.5) 100%);
+    background: linear-gradient(to right, rgba(133,0,0,0.49933476808692223) 0%, rgba(0,0,0,0) 50%, rgba(133,0,0,0.5) 100%);
+}
+.header-logo{
+    display: block;
+     width: 100px;
+}
+.header-logo img{
+    width: 100%;
 }
 .navigation{
     display: flex;
@@ -58,7 +70,11 @@ header{
 .dropdown-block{  
     position: relative;
 }
+.dropdown-child:nth-child(1){
+    margin-top: 10px;
+}
 .dropdown-child{
+    
     display: list-item;
 }
 .dropdown-child a{
@@ -72,136 +88,12 @@ header{
 .dropdown-block:hover .dropdown-list{
     height:200px;
 }
-/*INTRO-CONTAINER-----------------------------------------------------------------------*/
-.intro-container{
-    background: url(../images/mainpage-images/intro-image.jpg)center center / cover no-repeat;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-}
-.logo{
-    margin: 0 auto;
-    max-width: 300px;
-    min-width: 150px;
-    width: 30%;
-}
-.logo img{
-    width: 100%;
-}
-.intro-gradient{
-    color: white;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.margin-intro{
-    height: 30vh;
-    width:100%;
-}
-.main-row{
-    width: 100%;
-}
-/*CATEGORIES------------------------------------------------------*/
-.categories{
-    padding-bottom: 40px;
-    padding-top: 60px;
-}
-.category-image{
-    transition: .5s;
-    border-radius: 125px;
-    margin: 30px auto;
-    width: 250px;
-    height: 250px;
-    background: url(../images/mainpage-images/dog.jpg) center center / cover no-repeat;
-}
-.cat{
-    background: url(../images/mainpage-images/cat.jpg) center center / cover no-repeat;
-}
-.hamster{
-    background: url(../images/mainpage-images/hamster.jpeg) center center / cover no-repeat;
-}
-.parrot{
-    background: url(../images/mainpage-images/parrot.jpg) center center / cover no-repeat;
-}
-.turtle{
-    background: url(../images/mainpage-images/turtle.jpg) 30% center / cover no-repeat;
-}
-.raccoon{
-    background: url(../images/mainpage-images/raccoon.jpeg) center center / cover no-repeat;
-}
-.category-image img{
-    width: 100%;
-}
-.category-link{
-    border-radius: 50px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #ebebeb;
-    
-    transition: .5s;
-    padding: 15px;
-    color:orange;
-}
-.category-link:hover{
-    -webkit-box-shadow: 0 0  10px rgba(128, 128, 128, 0.75);
-    -moz-box-shadow: 0 0  10px rgba(128, 128, 128, 0.75);
-    box-shadow: 0 0  10px rgba(128, 128, 128, 0.75);
-    text-decoration: none;
-    color:gray;
-}
-.category-link:hover .category-image{
-    transform: scale(1.1);
-}
-.category-link:hover .category{
-    border:1px solid gray;
-}
-.row{
-    margin: 20px auto;
-    width: 100%;
-}
-/*ABOUT---------------------------------------------------------------------*/
-.about{
-    background: url(../images/mainpage-images/about-background.jpg) 65% 0 fixed;
-    margin-bottom: 30px;
-}
-.about-gradient{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 114, 114, 0.61);
-}
-.about-text h3{
-    margin-bottom: 30px;
-}
-.about-text{
-    font-size: 16px;
-    letter-spacing: 1px;
-    width: 90%;
-    margin: 0 auto;
-}
-.text-margin{
-    color:#ffffff;
-    margin-left: 30px;
-}
-.text-margin h5{
-    margin-left: 30px;
-}
-/*SUPPORT------------------------------------------------------------------------------------*/
-.support{
-    padding-bottom: 50px;
-}
-.support-text{
-    
-    width: 100%;
-}
-.support-map{
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-}
 
-.carousel-item{
-    background: url(../images/mainpage-images/dog.jpg) center center / cover no-repeat;
+/*FORM---------------------------------------------------------------*/
+.main-form{
+    width: 60%;
+    margin: 30px auto;
+    max-width: 600px;
 }
 /*FOOTER---------------------------------------------------------------------*/
 footer{
@@ -287,12 +179,6 @@ footer{
     order: 2
 }
 
-
-
-
-
-
-
 @media (min-width:600px){
     .about-text{
     font-size: 16px;
@@ -303,8 +189,8 @@ footer{
     .dropdown-list{
         
     }
-    header{
-        justify-content: flex-end;
+    .header-gradient{
+        justify-content: space-between;
     }
     .navigation{
         flex-direction: row;
