@@ -40,12 +40,12 @@ header{
     list-style: none;
 }
 .navigation> li{
-    margin:0px 10px;
+    margin:0px 7px;
 }
 .nav-links{
     
     color: gray;
-    font-size: 18px;
+    font-size: 17px;
 }
 .nav-links:hover{
     border-bottom: 1px solid gray;
@@ -60,7 +60,7 @@ header{
     overflow: hidden;
 }
 .dropdown-block a{
-    font-size: 25px;
+    font-size: 20px;
     color: orange;
     font-weight: 700;
 }
@@ -71,7 +71,7 @@ header{
     position: relative;
 }
 .dropdown-child:nth-child(1){
-   
+    margin-top: 10px;
 }
 .dropdown-child{
     
@@ -88,23 +88,35 @@ header{
 .dropdown-block:hover .dropdown-list{
     height:200px;
 }
-
-/*FORM---------------------------------------------------------------*/
-.main-form{
-    width: 60%;
-    margin: 30px auto;
-    max-width: 600px;
-}
-.form-control{
-    transition: .6s;
-    border-radius: 10px;
+/*CONTEINERS-------------------------------------------------------------------------------*/
+.pets-container{
     
+    padding-top: 30px;
+    width: 70%;
+    margin: 0 auto;
 }
-.form-control:focus{
-    transform: scaleX(1.05);
-    box-shadow: none;
-    border: 1px solid #64a6ff;
-    background-color: aliceblue;
+.card{
+    display: flex;
+    margin: 0px auto 30px;
+}
+.card img{
+    transition: .6s;
+    min-width: 100px;
+    max-width: 300px;
+    width: 100%;
+}
+.card-img{
+    overflow: hidden;
+}
+.card h5{
+    transition: .6s;
+    max-width: 350px;
+    margin: 15px auto 10px;
+}
+.card p{
+    transition: .6s;
+    margin: 10px auto;
+    max-width: 350px;
 }
 /*FOOTER---------------------------------------------------------------------*/
 footer{
@@ -190,7 +202,58 @@ footer{
     order: 2
 }
 
+.card a{
+    color:black;
+}
+
+.card a:hover{
+    text-decoration: none;
+    color: gray;
+}
+.card a:hover img{
+    transform: scale(1.1);
+}
+.support{
+    
+}
+.form-block{
+    margin-bottom: 30px;
+    padding: 20px 0px;
+    background-color: #ffe4e4;
+}
+.if-you-choose-block{
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+.if-you-choose-block p{
+    margin: 20px auto;
+    width: 60%;
+    font-size: 20px;
+    color: gray;
+}
+
 @media (min-width:600px){
+    .support{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .odd{
+        left: -30px;
+    }
+    .even{
+        left: 30px;
+    }
+    .text-order{
+        order:-1;
+    }
+    .pets-container{
+        width: 90%;
+    }
+    .header-gradient{
+        justify-content: space-between;
+        padding:20px 30px 20px 20px;
+    }
     .about-text{
     font-size: 16px;
     letter-spacing: 1px;
@@ -200,8 +263,8 @@ footer{
     .dropdown-list{
         
     }
-    .header-gradient{
-        justify-content: space-between;
+    header{
+        justify-content: flex-end;
     }
     .navigation{
         flex-direction: row;
@@ -212,6 +275,21 @@ footer{
     }
 }
 @media (min-width:960px){
+    .dropdown-block a{
+        font-size: 25px;
+    }
+    .navigation> li{
+        margin: 0 10px;
+    }
+    .nav-links{
+    
+    color: gray;
+    font-size: 22px;
+    }
+    .header-gradient{
+        
+        padding:20px 30px 20px 20px;
+    }
     .copyright{
         align-self: flex-end;
         order:0;
